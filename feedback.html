@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback - Elegant Gowns BW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="nav-logo">
+            <h2>Elegant Gowns BW</h2>
+        </div>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="gowns.html"><i class="fas fa-dress"></i> Gowns</a>
+        <a href="all.html"><i class="fas fa-tshirt"></i> All Collections</a>
+        <a href="jewelry.html"><i class="fas fa-gem"></i> Jewelry</a>
+        <a href="feedback.html" class="active"><i class="fas fa-comment"></i> Feedback</a>
+        <a href="index.html#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main" id="main">
+        <span class="menu-icon" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <!-- Page Navigation -->
+        <div class="page-nav">
+            <a href="#feedback-form">Share Your Feedback</a>
+            <a href="#contact-form">Contact Details</a>
+        </div>
+
+        <div class="feedback-container" id="feedback-form">
+            <h2>Customer Feedback</h2>
+            <form action="mailto:info@elegantgownsbw.com" method="post" enctype="text/plain" class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="purchase-date">Purchase Date:</label>
+                    <input type="date" id="purchase-date" name="purchase-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Product Purchased:</label>
+                    <select id="product" name="product">
+                        <option value="">Select a product</option>
+                        <option value="black-collection">Black Collection</option>
+                        <option value="caramel-collection">Caramel Collection</option>
+                        <option value="jewelry">Jewelry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"><i class="fas fa-star"></i></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="whatsapp-notice">
+                    <p><i class="fab fa-whatsapp"></i> Place your orders via WhatsApp: 
+                    +267 78398519</p>
+                </div>
+                <p>&copy; 2024 Elegant Gowns BW. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html> 

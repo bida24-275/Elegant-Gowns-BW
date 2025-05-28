@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Collections - Elegant Gowns BW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .promo-section {
+            background: linear-gradient(to right, #ff80ab, #ff4081);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .promo-section h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .promotion-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #fff;
+            color: #ff4081;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            margin: 10px;
+            font-size: 1.2em;
+        }
+
+        .promotion-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .collection h2 {
+            color: #ff4081;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ff80ab, #ff4081);
+            padding: 40px 0;
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: white;
+            opacity: 0.9;
+        }
+
+        .dress-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .dress-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .dress-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .dress-info h3 {
+            color: #ff4081;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            color: #ff80ab;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #ff80ab, #ff4081);
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 2em;
+            }
+        }
+
+        /* Add fixed top navigation styles */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 250px; /* Match sidenav width */
+            right: 0;
+            background: #ff80ab;
+            padding: 15px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .top-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .top-nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Adjust main content to account for fixed nav */
+        .main {
+            padding-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .top-nav {
+                left: 0;
+                flex-wrap: wrap;
+            }
+            
+            .main {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Side Navigation -->
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="nav-logo">
+            <h2>Elegant Gowns BW</h2>
+        </div>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="gowns.html"><i class="fas fa-dress"></i> Gowns</a>
+        <a href="all.html" class="active"><i class="fas fa-tshirt"></i> All Collections</a>
+        <a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a>
+        <a href="index.html#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main" id="main">
+        <span class="menu-icon" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <a href="#black-caramel">Black & Caramel</a>
+            <a href="#blue">Blue Collection</a>
+            <a href="#brown">Brown Collection</a>
+            <a href="#wedding">Wedding Collection</a>
+            <a href="#white">White Collection</a>
+            <a href="#red">Red Collection</a>
+        </div>
+
+        <header>
+            <h1>Complete Dress Collection</h1>
+            <p class="subtitle">Explore our extensive range of stunning dresses</p>
+        </header>
+
+        <div class="container">
+            <!-- Black and Caramel Collection -->
+            <div class="collection" id="black-caramel">
+                <h2>Black and Caramel Collection</h2>
+                <div class="dress-grid">
+                    <div class="dress-card">
+                        <img src="images/layla.jpg" alt="Layla Gown">
+                        <div class="dress-info">
+                            <h3>Layla</h3>
+                            <p>Elegant black evening gown</p>
+                            <span class="price">P1,200</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/laylablack2.jpg" alt="Layla Black 2">
+                        <div class="dress-info">
+                            <h3>Layla Black 2</h3>
+                            <p>Sophisticated black design</p>
+                            <span class="price">P1,300</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/laylacaramel1.jpg" alt="Layla Caramel 1">
+                        <div class="dress-info">
+                            <h3>Layla Caramel 1</h3>
+                            <p>Modern Caramel evening wear</p>
+                            <span class="price">P1,400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blue Collection -->
+            <div class="collection" id="blue">
+                <h2>Blue Collection</h2>
+                <div class="dress-grid">
+                    <div class="dress-card">
+                        <img src="images/blue1.jpg" alt="Blue Dress 1">
+                        <div class="dress-info">
+                            <h3>Ocean Blue Gown</h3>
+                            <p>Stunning blue evening gown</p>
+                            <span class="price">P1,200</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/blue2.jpg" alt="Blue Dress 2">
+                        <div class="dress-info">
+                            <h3>Azure Dream</h3>
+                            <p>Elegant blue design</p>
+                            <span class="price">P1,300</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/blue3.jpg" alt="Blue Dress 3">
+                        <div class="dress-info">
+                            <h3>Sapphire Beauty</h3>
+                            <p>Royal blue evening dress</p>
+                            <span class="price">P1,400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brown Collection -->
+            <div class="collection" id="brown">
+                <h2>Brown Collection</h2>
+                <div class="dress-grid">
+                    <div class="dress-card">
+                        <img src="images/brown1.jpg" alt="Brown Dress 1">
+                        <div class="dress-info">
+                            <h3>Chocolate Dream</h3>
+                            <p>Rich brown evening gown</p>
+                            <span class="price">P1,200</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/brown2.jpg" alt="Brown Dress 2">
+                        <div class="dress-info">
+                            <h3>Caramel Elegance</h3>
+                            <p>Sophisticated brown design</p>
+                            <span class="price">P1,300</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/brown3.jpg" alt="Brown Dress 3">
+                        <div class="dress-info">
+                            <h3>Bronze Beauty</h3>
+                            <p>Luxurious brown gown</p>
+                            <span class="price">P1,400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding Collection -->
+            <div class="collection" id="wedding">
+                <h2>Wedding Collection</h2>
+                <div class="dress-grid">
+                    <div class="dress-card">
+                        <img src="images/wed1.jpg" alt="Wedding Dress 1">
+                        <div class="dress-info">
+                            <h3>Bridal Dream</h3>
+                            <p>Classic wedding gown</p>
+                            <span class="price">P3,500</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/wed2.jpg" alt="Wedding Dress 2">
+                        <div class="dress-info">
+                            <h3>Princess Wedding</h3>
+                            <p>Elegant bridal design</p>
+                            <span class="price">P4,000</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/wed3.jpg" alt="Wedding Dress 3">
+                        <div class="dress-info">
+                            <h3>Royal Wedding</h3>
+                            <p>Luxurious wedding gown</p>
+                            <span class="price">P4,500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- White Collection -->
+            <div class="collection" id="white">
+                <h2>White Collection</h2>
+                <div class="dress-grid">
+                    <div class="dress-card">
+                        <img src="images/white1.jpg" alt="White Dress 1">
+                        <div class="dress-info">
+                            <h3>Pure Elegance</h3>
+                            <p>Classic white evening gown</p>
+                            <span class="price">P1,200</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/white2.jpg" alt="White Dress 2">
+                        <div class="dress-info">
+                            <h3>White Grace</h3>
+                            <p>Sophisticated white design</p>
+                            <span class="price">P1,300</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/white3.jpg" alt="White Dress 3">
+                        <div class="dress-info">
+                            <h3>Ivory Dream</h3>
+                            <p>Elegant white gown</p>
+                            <span class="price">P1,400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red Collection -->
+            <div class="collection" id="red">
+                <h2>Red Collection</h2>
+                <div class="dress-grid">
+                    <div class="dress-card">
+                        <img src="images/red1.jpg" alt="Red Dress 1">
+                        <div class="dress-info">
+                            <h3>Ruby Elegance</h3>
+                            <p>Stunning red evening gown</p>
+                            <span class="price">P1,200</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/red2.jpg" alt="Red Dress 2">
+                        <div class="dress-info">
+                            <h3>Scarlet Beauty</h3>
+                            <p>Glamorous red design</p>
+                            <span class="price">P1,300</span>
+                        </div>
+                    </div>
+                    <div class="dress-card">
+                        <img src="images/red3.jpg" alt="Red Dress 3">
+                        <div class="dress-info">
+                            <h3>Crimson Dream</h3>
+                            <p>Luxurious red gown</p>
+                            <span class="price">P1,400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <a href="gowns.html" class="promotion-link">PROMOTIONS!</a>
+        </footer>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.querySelector(".top-nav").style.left = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.querySelector(".top-nav").style.left = "0";
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('.top-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navOffset = 70; // Account for fixed nav height
+                const targetPosition = targetElement.offsetTop - navOffset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Gowns BW - Luxury Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="nav-logo">
+            <h2>Elegant Gowns BW</h2>
+        </div>
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="gowns.html"><i class="fas fa-dress"></i> Gowns</a>
+        <a href="all.html"><i class="fas fa-tshirt"></i> All Collections</a>
+        <a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main" id="main">
+        <span class="menu-icon" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <!-- Page Navigation -->
+        <div class="page-nav">
+            <a href="#main">Top</a>
+            <a href="#promotions">Promotions</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Welcome to Elegant Gowns BW</h1>
+            <p>Your Premier Destination for Luxury Fashion in Botswana</p>
+        </div>
+
+        <!-- Special Promotions -->
+        <section class="promotions" id="promotions">
+            <h2>Special Promotions</h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <img src="images/promo1.jpg" alt="Wedding Collection">
+                    <div class="promo-content">
+                        <h3>Wedding Collection</h3>
+                        <p>20% Off on Bridal Gowns</p>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="images/promo2.jpg" alt="Evening Wear">
+                    <div class="promo-content">
+                        <h3>Evening Wear</h3>
+                        <p>Buy 1 Get 1 50% Off</p>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="images/promo3.jpg" alt="Accessories">
+                    <div class="promo-content">
+                        <h3>Accessories</h3>
+                        <p>Free Jewelry with Gown Purchase</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="about-us" id="about">
+            <h2>About Elegant Gowns BW</h2>
+            <p>Established in Botswana, Elegant Gowns BW brings you the finest selection of designer gowns, evening wear, and accessories. We pride ourselves in offering exceptional quality and unmatched customer service.</p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>123 Fashion Street</p>
+                    <p>Gaborone, Botswana</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+267 78 398 519</p>
+                    <p>+267 8765 4321</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@elegantgownsbw.com</p>
+                    <p>sales@elegantgownsbw.com</p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="social-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="whatsapp-notice">
+                    <p><i class="fab fa-whatsapp"></i> Place your orders via WhatsApp: 
+                    +267 78398519</p>
+                </div>
+                <p>&copy; 2024 Elegant Gowns BW. All rights reserved.</p>
+            </div>
+        </section>
+
+        <!-- Promotions Link -->
+        <div class="promotions-link" style="text-align: center; margin: 40px 0;">
+            <a href="gowns.html" style="display: inline-block; padding: 15px 30px; background-color: #FFD700; color: #2c3e50; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;">PROMOTIONS!</a>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
