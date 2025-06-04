@@ -18,7 +18,7 @@ body {
     z-index: 200;
     top: 0;
     left: 0;
-    background-color: #FFD700; /* Gold navigation */
+    background-color: #FFD700; 
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -29,13 +29,13 @@ body {
     padding: 15px 25px;
     text-decoration: none;
     font-size: 16px;
-    color: #2c3e50; /* Darker text for contrast */
+    color: #2c3e50; 
     display: block;
     transition: all 0.3s ease;
 }
 
 .sidenav a:hover {
-    color: #ffffff; /* White text on hover */
+    color: #ffffff; 
     background-color: rgba(0,0,0,0.1);
     transform: translateX(10px);
 }
@@ -63,7 +63,7 @@ body {
     transition: margin-left .5s;
     padding: 20px;
     background-color: #FDFBF9;
-    padding-top: 60px; /* Add padding for fixed nav */
+    padding-top: 60px;
 }
 
 .menu-icon {
@@ -242,7 +242,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .hero-section h1 {
         font-size: 2.5em;
